@@ -1,0 +1,46 @@
+@page
+@model CrearPropiedadModel
+
+<h2>Agregar nueva propiedad</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Titulo">Título</label>
+        <input type="text" id="Titulo" name="Titulo" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Direccion">Dirección</label>
+        <input type="text" id="Direccion" name="Direccion" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Alcaldia">Alcaldía</label>
+        <select id="Alcaldia" name="Alcaldia" class="form-select">
+            <option value="Iztapalapa">Iztapalapa</option>
+            <option value="Tlalpan">Tlalpan</option>
+            <option value="Coyoacán">Coyoacán</option>
+            <option value="Xochimilco">Xochimilco</option>
+            <option value="Tláhuac">Tláhuac</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Tipo">Tipo</label>
+        <select id="Tipo" name="Tipo" class="form-select">
+            <option value="Casa">Casa</option>
+            <option value="Departamento">Departamento</option>
+            <option value="Cuarto">Cuarto</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Precio">Precio</label>
+        <input type="number" id="Precio" name="Precio" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Detalles">Detalles</label>
+        <textarea id="Detalles" name="Detalles" class="form-control" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="Disponible">Disponible</label>
+        <input type="checkbox" id="Disponible" name="Disponible">
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

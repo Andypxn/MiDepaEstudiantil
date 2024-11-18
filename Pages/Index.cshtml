@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h1>MiDepaEstudiantil</h1>
+<h2>Propiedades disponibles</h2>
+
+
+
+<div class="Filtros">
+    <form method="get">
+        <select name="tipo" class="form-select">
+            <option value="">Tipo</option>
+            <option value="Casa">Casa</option>
+            <option value="Departamento">Departamento</option>
+            <option value="Cuarto">Cuarto</option>
+        </select>
+        <select name="alcaldia" class="form-select">
+            <option value="">Alcaldía</option>
+            <option value="Iztapalapa">Iztapalapa</option>
+            <option value="Tlalpan">Tlalpan</option>
+            <option value="Coyoacán">Coyoacán</option>
+            <option value="Xochimilco">Xochimilco</option>
+            <option value="Tláhuac">Tláhuac</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Filtrar</button>
+    </form>
+</div>
+
+<div class="Propiedades">
+    @foreach (var propiedad in Model.Propiedades)
+    {
+        <div class="property">
+            <h3>@propiedad.Titulo</h3>
+            <p>@propiedad.Direccion - @propiedad.Alcaldia</p>
+            <p>Precio: @propiedad.Precio</p>
+            <a href="/Detalles?id=@propiedad.Id" class="btn btn-secondary">Ver Detalles</a>
+        </div>
+    }
+</div>
