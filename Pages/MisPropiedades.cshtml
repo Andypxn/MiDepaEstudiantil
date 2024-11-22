@@ -1,0 +1,42 @@
+@page
+@model MisPropiedadesModel
+@{
+    ViewData["Title"] = "Mis Propiedades";
+}
+@section Scripts {
+    <script src="~/js/MisPropiedades.js"></script>
+}
+
+<link rel="stylesheet" href="~/css/MisPropiedades.css">
+
+<header>
+    <h1>Mis Propiedades</h1>
+</header>
+
+<div class="top-bar">
+    <h2>Propiedades</h2>
+    <a asp-page="/CrearPropiedad" class="add-button">Agregar nueva propiedad</a>
+</div>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <ul class="property-list">
+        @foreach (var propiedad in Model.Propiedades)
+        {
+            <li class="property-item">
+                <img src="@Url.Content($"~/images/{propiedad.Imagen}")" alt="Imagen de @propiedad.Titulo" class="img-fluid">
+                <div class="property-details">
+                    <h3>@propiedad.Titulo</h3>
+                    <p>Ubicación: @propiedad.Direccion</p>
+                    <p>Precio: $@propiedad.Precio</p>
+                </div>
+                <div class="property-actions">
+                    <a asp-page="/EditarPropiedad" asp-route-id="@propiedad.Id" class="edit-button">Editar</a>
+                    <button type="button" class="delete-button" onclick="deleteProperty(this, @propiedad.Id)">Borrar</button>
+                </div>
+            </li>
+        }
+    </ul>
+</form>
+
+

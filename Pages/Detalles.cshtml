@@ -1,0 +1,28 @@
+@page "{id:int}"
+@model DetallesModel
+@{
+    ViewData["Title"] = "Detalles de Propiedad";
+}
+<link rel="stylesheet" href="~/css/Detalles.css" />
+
+<div class="detalles-container">
+    <div class="detalles-header">
+        <h1>@Model.Propiedad.Titulo</h1>
+    </div>
+    <div class="detalles-content">
+        <div class="detalles-imagen">
+            <img src="~/images/@Model.Propiedad.Imagen" alt="Imagen de @Model.Propiedad.Titulo" />
+        </div>
+        <div class="detalles-informacion">
+            <p><strong>Dirección:</strong> @Model.Propiedad.Direccion</p>
+            <p><strong>Alcaldía:</strong> @Model.Propiedad.Alcaldia</p>
+            <p><strong>Tipo:</strong> @Model.Propiedad.Tipo</p>
+            <p><strong>Precio:</strong> $@Model.Propiedad.Precio</p>
+            <p><strong>Disponible:</strong> @(Model.Propiedad.Disponible ? "Sí" : "No")</p>
+            <p><strong>Detalles:</strong> @Model.Propiedad.Detalles</p>
+        </div>
+    </div>
+    <div class="detalles-acciones">
+        <a href="/Index" class="btn btn-primary">Volver a Pagina Principal</a>
+    </div>
+</div>

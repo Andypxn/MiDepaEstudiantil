@@ -1,0 +1,38 @@
+@page
+@model MiCuentaModel
+@{
+    ViewData["Title"] = "Mi Cuenta";
+}
+
+<div class="container">
+    <h1>Mi Cuenta</h1>
+    <div class="info">
+        <label>Nombre:</label>
+        <p>@Model.Nombre</p>
+    </div>
+    <div class="info">
+        <label>Apellido:</label>
+        <p>@Model.Apellido</p>
+    </div>
+    <div class="info">
+        <label>Correo Electrónico:</label>
+        <p>@Model.Correo</p>
+    </div>
+    <div class="info">
+        <label>Teléfono:</label>
+        <p>@Model.Telefono</p>
+    </div>
+    <div class="info">
+        <label>Contraseña:</label>
+        <p>********</p> <!-- Opcional: Mostrar solo asteriscos -->
+    </div>
+    <div class="actions mt-3">
+        <a asp-page="/CambiarContrasena" class="btn btn-warning">Cambiar Contraseña</a>
+        <form method="post" class="d-inline">
+           <button id="logoutButton" class="btn btn-danger">Cerrar Sesión</button>  
+     <script src="~/js/logout.js"></script>
+
+
+        </form>
+    </div>
+</div>

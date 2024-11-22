@@ -3,40 +3,66 @@
 @{
     ViewData["Title"] = "Inicio";
 }
+<link rel="stylesheet" href="~/css/Index.css">
 
-<h1>MiDepaEstudiantil</h1>
-<h2>Propiedades disponibles</h2>
+<h1 class="text-center">Propiedades disponibles</h1>
 
+<!-- Botón "Mi Cuenta" o "Iniciar Sesión" -->
+@if (User.Identity != null && User.Identity.IsAuthenticated)
+{
+    <div class="mt-4 text-end">
+        <a asp-page="/MiCuenta" class="btn btn-primary">Mi Cuenta</a>
+    </div>
+}
+else
+{
+    <div class="mt-4 text-end">
+        <a asp-page="/Login" class="btn btn-secondary">Iniciar Sesión</a>
+    </div>
+}
 
-
-<div class="Filtros">
-    <form method="get">
-        <select name="tipo" class="form-select">
-            <option value="">Tipo</option>
-            <option value="Casa">Casa</option>
-            <option value="Departamento">Departamento</option>
-            <option value="Cuarto">Cuarto</option>
-        </select>
-        <select name="alcaldia" class="form-select">
-            <option value="">Alcaldía</option>
-            <option value="Iztapalapa">Iztapalapa</option>
-            <option value="Tlalpan">Tlalpan</option>
-            <option value="Coyoacán">Coyoacán</option>
-            <option value="Xochimilco">Xochimilco</option>
-            <option value="Tláhuac">Tláhuac</option>
-        </select>
-        <button type="submit" class="btn btn-primary">Filtrar</button>
+<!-- Filtros -->
+<div class="Filtros mt-3 text-center">
+    <form method="get" class="filter-form">
+        <div class="filter-group">
+            <label for="alcaldia" class="form-label">Alcaldía</label>
+            <select id="alcaldia" name="alcaldia" class="form-select">
+                <option value="">Selecciona una alcaldía</option>
+                <option value="Iztapalapa">Iztapalapa</option>
+                <option value="Tlalpan">Tlalpan</option>
+                <option value="Coyoacán">Coyoacán</option>
+                <option value="Xochimilco">Xochimilco</option>
+                <option value="Tláhuac">Tláhuac</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="tipo" class="form-label">Tipo</label>
+            <select id="tipo" name="tipo" class="form-select">
+                <option value="">Selecciona un tipo</option>
+                <option value="Casa">Casa</option>
+                <option value="Departamento">Departamento</option>
+                <option value="Cuarto">Cuarto</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Filtrar</button>
     </form>
 </div>
 
-<div class="Propiedades">
+<!-- Listado de Propiedades -->
+<div class="Propiedades mt-4">
     @foreach (var propiedad in Model.Propiedades)
     {
-        <div class="property">
-            <h3>@propiedad.Titulo</h3>
-            <p>@propiedad.Direccion - @propiedad.Alcaldia</p>
-            <p>Precio: @propiedad.Precio</p>
-            <a href="/Detalles?id=@propiedad.Id" class="btn btn-secondary">Ver Detalles</a>
+        <div class="property-card d-flex align-items-center">
+            <img src="@propiedad.Imagen" alt="Imagen de @propiedad.Titulo" class="property-image">
+            <div class="property-info">
+                <h3>@propiedad.Titulo</h3>
+                <p>Ubicación: @propiedad.Direccion - @propiedad.Alcaldia</p>
+                <p>Tipo: @propiedad.Tipo</p>
+                <p>Precio: $@string.Format("{0:N0}", propiedad.Precio) / mensual</p>
+            </div>
+            <div class="property-actions text-end">
+                <a href="/Detalles/@propiedad.Id" class="btn btn-secondary">Ver Detalles</a>
+            </div>
         </div>
     }
 </div>

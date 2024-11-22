@@ -16,9 +16,12 @@ namespace MiDepaEstudiantil.Data
             modelBuilder.Entity<Propiedad>()
                 .HasOne(p => p.Usuario)
                 .WithMany(u => u.Propiedades)
-                .HasForeignKey(p => p.UsuarioId); // Agregado el punto y coma
-
-                modelBuilder.Entity<Usuario>().ToTable("Usuarios"); //to create the table in SQL for Usuario
-        }
+                .HasForeignKey(p => p.UsuarioId) // Agregado el punto y coma
+                .OnDelete(DeleteBehavior.Cascade);
+               modelBuilder.Entity<Usuario>().ToTable("Usuarios");
+                modelBuilder.Entity<Propiedad>().ToTable("Propiedades"); //to create the table in SQL for Usuario
+       
+        }      
     }
 }
+

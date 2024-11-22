@@ -1,0 +1,35 @@
+@page
+@model PropiedadesModel
+@{
+    ViewData["Title"] = "Propiedades";
+}
+<link rel="stylesheet" href="~/css/Propiedades.css" />
+
+<h1>Propiedades Disponibles</h1>
+
+<div class="property-list">
+    @if (Model.PropiedadesDisponibles.Any())
+    {
+        @foreach (var propiedad in Model.PropiedadesDisponibles)
+        {
+            <div class="property-item">
+                <img src="~/@propiedad.Imagen" alt="Imagen de @propiedad.Titulo" class="img-fluid">
+
+                <div class="property-details">
+                    <h2>@propiedad.Titulo</h2>
+                    <p><strong>Ubicación:</strong> @propiedad.Direccion - @propiedad.Alcaldia</p>
+                    <p><strong>Precio:</strong> $@propiedad.Precio</p>
+                    <p><strong>Detalles:</strong> @propiedad.Detalles</p>
+               
+                    <a href="/Detalles?id=@propiedad.Id" class="btn btn-primary">Ver Detalles</a>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p>No hay propiedades disponibles en este momento.</p>
+    }
+</div>
+
+<script src="~/js/Propiedades.js"></script>

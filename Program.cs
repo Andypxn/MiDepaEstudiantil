@@ -3,28 +3,78 @@ using MiDepaEstudiantil.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Configurar servicios
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Agregar autenticación con cookies
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login";
+        options.LogoutPath = "/api/auth/logout";
+        options.AccessDeniedPath = "/AccessDenied";
+        options.Cookie.HttpOnly = true;
+        options.Cookie.SameSite = SameSiteMode.Strict;
+        options.Cookie.SecurePolicy = builder.Environment.IsDevelopment()
+            ? CookieSecurePolicy.None
+            : CookieSecurePolicy.Always;
+    });
+
+builder.Services.AddAuthorization();
+
+// Habilitar sesiones
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(100);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Inicializar la base de datos
+if (app.Environment.IsDevelopment())
+{
+    try
+    {
+        using (var scope = app.Services.CreateScope())
+        {
+            var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+            if (context.Database.GetPendingMigrations().Any())
+            {
+                context.Database.Migrate();
+            }
+            DatabaseSeeder.Seed(context);
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error al inicializar la base de datos: {ex.Message}");
+    }
+}
+
+// Configurar middleware
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
-//app.UseHttpsRedirection();
 
+app.UseStaticFiles();
 app.UseRouting();
 
+// Middleware de autenticación y autorización
+app.UseAuthentication();
 app.UseAuthorization();
-
-app.MapStaticAssets();
+// Mapear controladores y páginas
+app.MapControllers();
 app.MapRazorPages();
+
+// Middleware de sesiones
+app.UseSession();
 
 
 app.Run();

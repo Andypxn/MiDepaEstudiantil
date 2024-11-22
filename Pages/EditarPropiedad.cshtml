@@ -1,0 +1,57 @@
+@page "{id:int}"
+@model EditarPropiedadModel
+@{
+    ViewData["Title"] = "Editar Propiedad";
+}
+
+<link rel="stylesheet" href="~/css/EditarPropiedad.css" />
+
+<h2>Editar Propiedad</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Titulo">Título</label>
+        <input type="text" id="Titulo" name="Propiedad.Titulo" value="@Model.Propiedad.Titulo" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Direccion">Dirección</label>
+        <input type="text" id="Direccion" name="Propiedad.Direccion" value="@Model.Propiedad.Direccion" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Alcaldia">Alcaldía</label>
+        <select id="Alcaldia" name="Propiedad.Alcaldia" class="form-select">
+            <option value="Iztapalapa" selected="@(Model.Propiedad.Alcaldia == "Iztapalapa")">Iztapalapa</option>
+            <option value="Tlalpan" selected="@(Model.Propiedad.Alcaldia == "Tlalpan")">Tlalpan</option>
+            <option value="Coyoacán" selected="@(Model.Propiedad.Alcaldia == "Coyoacán")">Coyoacán</option>
+            <option value="Xochimilco" selected="@(Model.Propiedad.Alcaldia == "Xochimilco")">Xochimilco</option>
+            <option value="Tláhuac" selected="@(Model.Propiedad.Alcaldia == "Tláhuac")">Tláhuac</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Tipo">Tipo</label>
+        <select id="Tipo" name="Propiedad.Tipo" class="form-select">
+            <option value="Casa" selected="@(Model.Propiedad.Tipo == "Casa")">Casa</option>
+            <option value="Departamento" selected="@(Model.Propiedad.Tipo == "Departamento")">Departamento</option>
+            <option value="Cuarto" selected="@(Model.Propiedad.Tipo == "Cuarto")">Cuarto</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Precio">Precio</label>
+        <input type="number" id="Precio" name="Propiedad.Precio" value="@Model.Propiedad.Precio" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="Detalles">Detalles</label>
+        <textarea id="Detalles" name="Propiedad.Detalles" class="form-control" required>@Html.Raw(Model.Propiedad.Detalles)</textarea>
+    </div>
+    <div class="form-group">
+        <label for="Disponible">Disponible</label>
+        <input type="checkbox" id="Disponible" name="Propiedad.Disponible" checked="@(Model.Propiedad.Disponible)" />
+    </div>
+    <div class="form-group">
+        <label for="NuevaImagen">Cambiar Imagen</label>
+        <input type="file" id="NuevaImagen" name="NuevaImagen" class="form-control-file" accept="image/*">
+        <p>Imagen actual:</p>
+        <img src="~/images/@Model.Propiedad.Imagen" alt="Imagen Actual" width="150">
+    </div>
+    <button type="/MisPropiedades" class="btn btn-primary">Guardar Cambios</button>
+</form>

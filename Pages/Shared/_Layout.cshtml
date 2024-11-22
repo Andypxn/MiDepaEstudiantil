@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MiDepaEstudiantil.styles.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false) 
 </head>
 <body>
     <header>
@@ -23,12 +24,32 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                         <a class="nav-link text-dark" asp-area="" asp-page="/Registro">Registro</a>
-                        </li>
+                       @if (User.Identity != null && User.Identity.IsAuthenticated)
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-page="/MiCuenta">Mi Cuenta</a>
+    </li>
+
+    @if (User.IsInRole("Propietario"))
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="gestionPropiedades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gestión de Propiedades
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="gestionPropiedades">
+                <li><a class="dropdown-item" asp-area="" asp-page="/MisPropiedades">Mis Propiedades</a></li>
+                <li><a class="dropdown-item" asp-area="" asp-page="/MisRentas">Mis Rentas</a></li>
+            </ul>
+        </li>
+    }
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-page="/Login">Iniciar Sesión</a>
+    </li>
+}
+
                     </ul>
                 </div>
             </div>
@@ -40,16 +61,13 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - MiDepaEstudiantil - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

@@ -1,0 +1,100 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado principal */
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Botón de Login o Mi Cuenta */
+.mt-4.text-end a {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.mt-4.text-end a:hover {
+    background-color: #0056b3;
+}
+
+/* Filtros */
+.Filtros {
+    margin: 20px auto;
+    max-width: 600px;
+}
+.filter-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.filter-group {
+    flex: 1;
+}
+.filter-group .form-label {
+    font-weight: bold;
+    color: #495057;
+}
+.filter-group .form-select {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Propiedades */
+.Propiedades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.property-card {
+    display: flex;
+    align-items: center;
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+.property-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+.property-info {
+    flex: 2;
+}
+.property-info h3 {
+    margin: 0;
+    color: #333;
+}
+.property-info p {
+    margin: 5px 0;
+    color: #666;
+}
+.property-actions {
+    flex: 1;
+    text-align: right;
+}
+.property-actions .btn {
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.property-actions .btn:hover {
+    background-color: #5a359d;
+}

@@ -44,7 +44,12 @@ namespace MiDepaEstudiantil.Migrations
                     b.Property<bool>("Disponible")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Imagen")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("Precio")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Tipo")
@@ -62,7 +67,7 @@ namespace MiDepaEstudiantil.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Propiedades");
+                    b.ToTable("Propiedades", (string)null);
                 });
 
             modelBuilder.Entity("MiDepaEstudiantil.Models.Usuario", b =>
@@ -103,7 +108,7 @@ namespace MiDepaEstudiantil.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuarios", (string)null);
                 });
 
             modelBuilder.Entity("MiDepaEstudiantil.Models.Propiedad", b =>

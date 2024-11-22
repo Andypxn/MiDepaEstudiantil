@@ -1,0 +1,135 @@
+/* Reset básico */
+body, h1, ul, li, p, a, input {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+/* Estilo del formulario */
+.form-login {
+    background: #fff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+/* Contenedor de cada input */
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px 15px 12px 40px; /* Espacio interno con espacio reservado para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-container input::placeholder {
+    color: #aaa; /* Color de texto del placeholder */
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #007BFF; /* Color azul al enfocar */
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px; /* Ícono a la izquierda del input */
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* Botón de envío */
+.btn {
+    background-color: #007BFF; /* Azul */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Enlace */
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Estilo del elemento <select> */
+select {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px 15px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    background-color: #fff; /* Fondo blanco */
+    appearance: none; /* Quita el estilo por defecto del navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+
+/* Contenedor para el select */
+.select-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.select-container::after {
+    content: '\f078'; /* Icono de flecha hacia abajo */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    color: #aaa;
+    position: absolute;
+    right: 15px;
+    pointer-events: none; /* No afecta la interacción */
+}
+
+/* Cuando el <select> está en focus */
+select:focus {
+    outline: none;
+    border-color: #007BFF; /* Azul al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul */
+}

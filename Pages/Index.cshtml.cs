@@ -1,24 +1,36 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using MiDepaEstudiantil.Models;
 using MiDepaEstudiantil.Data;
+using MiDepaEstudiantil.Models;
 
-public  class IndexModel(ApplicationDbContext context) : PageModel
+public class IndexModel : PageModel
 {
-    private readonly ApplicationDbContext _context = context;
+    private readonly ApplicationDbContext _context;
 
-    public required List<Propiedad> Propiedades { get; set; }
+    public IndexModel(ApplicationDbContext context)
+    {
+        _context = context;
+    }
 
-    public async Task OnGetAsync(string tipo, string alcaldia)
+    public List<Propiedad> Propiedades { get; set; } = new();
+
+    public async Task OnGetAsync(string? tipo, string? alcaldia)
     {
         var query = _context.Propiedades.AsQueryable();
 
+        // Filtro por tipo
         if (!string.IsNullOrEmpty(tipo))
+        {
             query = query.Where(p => p.Tipo == tipo);
+        }
 
+        // Filtro por alcaldía
         if (!string.IsNullOrEmpty(alcaldia))
+        {
             query = query.Where(p => p.Alcaldia == alcaldia);
+        }
 
-        Propiedades = await _context.Propiedades.ToListAsync();
+        // Obtener propiedades disponibles
+        Propiedades = await query.Where(p => p.Disponible).ToListAsync();
     }
 }

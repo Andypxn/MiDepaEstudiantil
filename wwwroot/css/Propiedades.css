@@ -1,0 +1,63 @@
+/* Contenedor principal */
+.property-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+}
+
+/* Cada propiedad individual */
+.property-item {
+    display: flex;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+/* Imagen de la propiedad */
+.property-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta el contenido dentro del marco */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+
+/* Detalles de la propiedad */
+.property-details {
+    padding: 15px;
+    flex: 1;
+}
+
+.property-details h2 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.property-details p {
+    font-size: 16px;
+    color: #495057;
+    margin: 5px 0;
+}
+
+.property-details .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.property-details .btn:hover {
+    background-color: #0056b3;
+}

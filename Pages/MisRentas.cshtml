@@ -1,0 +1,39 @@
+@page
+@model MisRentasModel
+@{
+    ViewData["Title"] = "Mis Rentas";
+}
+<link rel="stylesheet" href="~/css/MisRentas.css">
+
+<div class="container">
+    <h1>Mis Rentas</h1>
+
+    <div class="property-list">
+        @if (Model.Rentas.Any())
+        {
+            @foreach (var propiedad in Model.Rentas)
+            {
+                <div class="property">
+                    <img src="~/@propiedad.Imagen" alt="Imagen de @propiedad.Titulo" class="property-image">
+                    <div class="property-details">
+                        <h2>@propiedad.Titulo</h2>
+                        <p><strong>Precio:</strong> $@propiedad.Precio</p>
+                        <p><strong>Estado:</strong> Ocupada</p>
+                        <div class="property-actions">
+                            <label for="telefono-@propiedad.Id">Registrar al arrendatario (Número de teléfono):</label>
+                            <input type="text" id="telefono-@propiedad.Id" placeholder="Ej. 5551234567">
+                            <button class="btn registrar" onclick="registrarArrendatario(@propiedad.Id)">Registrar como ocupada</button>
+                            <button class="btn desvincular" onclick="desvincularPropiedad(@propiedad.Id)">Desvincular y marcar como disponible</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No tienes propiedades ocupadas actualmente.</p>
+        }
+    </div>
+</div>
+
+<script src="~/js/MisRentas.js"></script>

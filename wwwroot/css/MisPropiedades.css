@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f2; /* Beige claro */
+    color: #4a4a4a; /* Gris oscuro */
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #d4cbc4; /* Beige grisáceo */
+    color: #4a4a4a; /* Gris oscuro */
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Barra superior */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.top-bar h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+
+.add-button {
+    padding: 0.7rem 1.5rem;
+    background-color: #b7a89e; /* Beige medio */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #9f8f84; /* Beige oscuro */
+}
+
+/* Lista de propiedades (cambiado a una lista vertical) */
+.property-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: block; /* Cambio aquí para hacer que se muestre de forma vertical */
+}
+
+.property-item {
+    background-color: #ffffff; /* Blanco */
+    border: 1px solid #e0e0e0; /* Gris claro */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Para que ocupe todo el ancho disponible */
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem; /* Añadir espacio entre las tarjetas */
+}
+
+.property-item img {
+    width: 100%; /* Aumenta el tamaño de las imágenes */
+    height: 300px; /* Fija una altura específica para las imágenes */
+    object-fit: cover; /* Asegura que la imagen se recorte si es necesario para ajustarse */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0; /* Gris claro */
+}
+
+.property-details h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #4a4a4a; /* Gris oscuro */
+}
+
+.property-details p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+/* Botones de acción */
+.property-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.edit-button {
+    padding: 0.5rem 1rem;
+    background-color: #b7a89e; /* Beige medio */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #9f8f84; /* Beige oscuro */
+}
+
+.delete-button {
+    padding: 0.5rem 1rem;
+    background-color: #e0e0e0; /* Gris claro */
+    color: #4a4a4a; /* Gris oscuro */
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c4c4c4; /* Gris medio */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .property-item {
+        width: 100%;
+    }
+}

@@ -5,6 +5,46 @@
       "PackagePath": "staticwebassets/MiDepaEstudiantil.0ectu64z62.bundle.scp.css"
     },
     {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/CrearPropiedad.css",
+      "PackagePath": "staticwebassets/css/CrearPropiedad.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/Detalles.css",
+      "PackagePath": "staticwebassets/css/Detalles.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/EditarPropiedad.css",
+      "PackagePath": "staticwebassets/css/EditarPropiedad.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/Index.css",
+      "PackagePath": "staticwebassets/css/Index.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/Login.css",
+      "PackagePath": "staticwebassets/css/Login.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/MiCuenta.css",
+      "PackagePath": "staticwebassets/css/MiCuenta.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/MisPropiedades.css",
+      "PackagePath": "staticwebassets/css/MisPropiedades.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/MisRentas.css",
+      "PackagePath": "staticwebassets/css/MisRentas.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/Propiedades.css",
+      "PackagePath": "staticwebassets/css/Propiedades.css"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/Registro.css",
+      "PackagePath": "staticwebassets/css/Registro.css"
+    },
+    {
       "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/css/Styles.css",
       "PackagePath": "staticwebassets/css/Styles.css"
     },
@@ -17,8 +57,68 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/15epgo1l.pwh.jpg",
+      "PackagePath": "staticwebassets/images/15epgo1l.pwh.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/La Casa de Andres.jpeg",
+      "PackagePath": "staticwebassets/images/La Casa de Andres.jpeg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/default-property.jpg",
+      "PackagePath": "staticwebassets/images/default-property.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/dkqo21nb.p0u.jpg",
+      "PackagePath": "staticwebassets/images/dkqo21nb.p0u.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/fcrc41wp.cfy.jpg",
+      "PackagePath": "staticwebassets/images/fcrc41wp.cfy.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/guav45vo.pzq.jpg",
+      "PackagePath": "staticwebassets/images/guav45vo.pzq.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/hisre0kv.hiq.jpg",
+      "PackagePath": "staticwebassets/images/hisre0kv.hiq.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/jfset4m0.1ey.jpg",
+      "PackagePath": "staticwebassets/images/jfset4m0.1ey.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/n4pzai2e.v4z.jpg",
+      "PackagePath": "staticwebassets/images/n4pzai2e.v4z.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/images/vcba4wjp.nq5.jpg",
+      "PackagePath": "staticwebassets/images/vcba4wjp.nq5.jpg"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/Login.js",
+      "PackagePath": "staticwebassets/js/Login.js"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/MisPropiedades.js",
+      "PackagePath": "staticwebassets/js/MisPropiedades.js"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/MisRentas.js",
+      "PackagePath": "staticwebassets/js/MisRentas.js"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/Propiedades.js",
+      "PackagePath": "staticwebassets/js/Propiedades.js"
+    },
+    {
       "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/Validaciones.js",
       "PackagePath": "staticwebassets/js/Validaciones.js"
+    },
+    {
+      "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/logout.js",
+      "PackagePath": "staticwebassets/js/logout.js"
     },
     {
       "Id": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/site.js",
