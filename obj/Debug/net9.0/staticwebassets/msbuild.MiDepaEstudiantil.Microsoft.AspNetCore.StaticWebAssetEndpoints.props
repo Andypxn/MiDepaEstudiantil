@@ -300,17 +300,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pn7bqlpo6a"},{"Name":"integrity","Value":"sha256-hVn\u002BVl6HE7MFMdXdO6LzfAfVcuuFTTu4IZXOLTb7o7M="},{"Name":"label","Value":"_content/MiDepaEstudiantil/js/logout.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"776"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hVn\u002BVl6HE7MFMdXdO6LzfAfVcuuFTTu4IZXOLTb7o7M=\u0022"},{"Name":"Last-Modified","Value":"Thu, 21 Nov 2024 01:36:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MiDepaEstudiantil/js/MisPropiedades.1zirl4ac31.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\MisPropiedades.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1zirl4ac31"},{"Name":"integrity","Value":"sha256-MwLfSw\u002BaYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo="},{"Name":"label","Value":"_content/MiDepaEstudiantil/js/MisPropiedades.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1069"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022MwLfSw\u002BaYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 20 Nov 2024 15:24:32 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MiDepaEstudiantil/js/MisPropiedades.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\MisPropiedades.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MwLfSw\u002BaYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1069"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022MwLfSw\u002BaYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 20 Nov 2024 15:24:32 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1961"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 22 Nov 2024 15:36:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MiDepaEstudiantil/js/MisPropiedades.m6ph66ymul.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\MisPropiedades.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m6ph66ymul"},{"Name":"integrity","Value":"sha256-Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0="},{"Name":"label","Value":"_content/MiDepaEstudiantil/js/MisPropiedades.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1961"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 22 Nov 2024 15:36:40 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MiDepaEstudiantil/js/MisRentas.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\MisRentas.js'))</AssetFile>

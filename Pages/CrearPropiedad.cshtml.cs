@@ -5,7 +5,7 @@ using MiDepaEstudiantil.Data;
 using MiDepaEstudiantil.Models;
 using System.IO;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;   
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -106,19 +106,19 @@ namespace MiDepaEstudiantil.Pages
                 }
             }
             else
-  {
-    // Verificar si la imagen predeterminada existe
-    var defaultImagePath = Path.Combine(_environment.WebRootPath, "images", "default-property.jpg");
-    if (System.IO.File.Exists(defaultImagePath))
-    {
-        imagePath = "images/default-property.jpg";
-    }
-    else
-    {
-        ModelState.AddModelError(string.Empty, "No se pudo asignar la imagen predeterminada porque no existe en el servidor.");
-        return Page(); // Retorna a la página con un mensaje de error
-    }
-}
+            {
+                // Verificar si la imagen predeterminada existe
+                var defaultImagePath = Path.Combine(_environment.WebRootPath, "images", "default-property.jpg");
+                if (System.IO.File.Exists(defaultImagePath))
+                {
+                    imagePath = "images/default-property.jpg";
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "No se pudo asignar la imagen predeterminada porque no existe en el servidor.");
+                    return Page(); // Retorna a la página con un mensaje de error
+                }
+            }
 
             // Crear el objeto propiedad
             var propiedad = new Propiedad
@@ -137,7 +137,7 @@ namespace MiDepaEstudiantil.Pages
             _context.Propiedades.Add(propiedad);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("/MisPropiedades");
+            return NotFound("error modificar");
         }
     }
 }

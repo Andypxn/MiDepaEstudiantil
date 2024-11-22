@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xi03xiculeluwLZjrr00hAQZXdu/BJvhiSCyYQGvtbA=",
+  "Hash": "jQ9o1cSHTp3XO1hL9pz/LZiB+d9ILdTZ1Nv+s5b9OpQ=",
   "Source": "MiDepaEstudiantil",
   "BasePath": "_content/MiDepaEstudiantil",
   "Mode": "Default",
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/lib/jquery/dist/jquery.slim.min.js"
     },
     {
-      "Identity": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-1zirl4ac31.gz",
+      "Identity": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-m6ph66ymul.gz",
       "SourceId": "MiDepaEstudiantil",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/MiDepaEstudiantil",
-      "RelativePath": "js/MisPropiedades#[.{fingerprint=1zirl4ac31}]?.js.gz",
+      "RelativePath": "js/MisPropiedades#[.{fingerprint=m6ph66ymul}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/MisPropiedades.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "uloopg4dh4",
-      "Integrity": "bvTMpcK3s52MhST5MswS1NZ8TK2N7xt07W3LOrsyjFM=",
+      "Fingerprint": "70sq0gucww",
+      "Integrity": "RzBsX6shl5hj1BQiKDr6dywIItSreu5y9ZZpSxnVkbM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/MisPropiedades.js"
@@ -2299,8 +2299,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1zirl4ac31",
-      "Integrity": "MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo=",
+      "Fingerprint": "m6ph66ymul",
+      "Integrity": "Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/MisPropiedades.js"
@@ -8942,13 +8942,13 @@
       ]
     },
     {
-      "Route": "js/MisPropiedades.1zirl4ac31.js",
-      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-1zirl4ac31.gz",
+      "Route": "js/MisPropiedades.js",
+      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-m6ph66ymul.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001992031873"
+          "Quality": "0.001727115717"
         }
       ],
       "ResponseHeaders": [
@@ -8958,19 +8958,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "501"
+          "Value": "578"
         },
         {
           "Name": "ETag",
-          "Value": "\"bvTMpcK3s52MhST5MswS1NZ8TK2N7xt07W3LOrsyjFM=\""
+          "Value": "\"RzBsX6shl5hj1BQiKDr6dywIItSreu5y9ZZpSxnVkbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Nov 2024 15:24:32 GMT"
+          "Value": "Fri, 22 Nov 2024 15:36:40 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -8986,26 +8986,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo=\""
+          "Value": "W/\"Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "1zirl4ac31"
-        },
-        {
-          "Name": "label",
-          "Value": "js/MisPropiedades.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo="
+          "Value": "sha256-Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0="
         }
       ]
     },
     {
-      "Route": "js/MisPropiedades.1zirl4ac31.js",
+      "Route": "js/MisPropiedades.js",
       "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/MisPropiedades.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9015,7 +9007,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1069"
+          "Value": "1961"
         },
         {
           "Name": "Content-Type",
@@ -9023,11 +9015,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo=\""
+          "Value": "\"Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Nov 2024 15:24:32 GMT"
+          "Value": "Fri, 22 Nov 2024 15:36:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0="
+        }
+      ]
+    },
+    {
+      "Route": "js/MisPropiedades.js.gz",
+      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-m6ph66ymul.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "578"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RzBsX6shl5hj1BQiKDr6dywIItSreu5y9ZZpSxnVkbM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 15:36:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RzBsX6shl5hj1BQiKDr6dywIItSreu5y9ZZpSxnVkbM="
+        }
+      ]
+    },
+    {
+      "Route": "js/MisPropiedades.m6ph66ymul.js",
+      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-m6ph66ymul.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001727115717"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "578"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RzBsX6shl5hj1BQiKDr6dywIItSreu5y9ZZpSxnVkbM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 15:36:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m6ph66ymul"
+        },
+        {
+          "Name": "label",
+          "Value": "js/MisPropiedades.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0="
+        }
+      ]
+    },
+    {
+      "Route": "js/MisPropiedades.m6ph66ymul.js",
+      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/MisPropiedades.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1961"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 22 Nov 2024 15:36:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9037,7 +9174,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1zirl4ac31"
+          "Value": "m6ph66ymul"
         },
         {
           "Name": "label",
@@ -9045,13 +9182,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo="
+          "Value": "sha256-Qigeoy1PHGvGRi0AC/AF57DhMNY4CE1fuWBeLzAxgX0="
         }
       ]
     },
     {
-      "Route": "js/MisPropiedades.1zirl4ac31.js.gz",
-      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-1zirl4ac31.gz",
+      "Route": "js/MisPropiedades.m6ph66ymul.js.gz",
+      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-m6ph66ymul.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9060,7 +9197,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "501"
+          "Value": "578"
         },
         {
           "Name": "Content-Type",
@@ -9068,11 +9205,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bvTMpcK3s52MhST5MswS1NZ8TK2N7xt07W3LOrsyjFM=\""
+          "Value": "\"RzBsX6shl5hj1BQiKDr6dywIItSreu5y9ZZpSxnVkbM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 20 Nov 2024 15:24:32 GMT"
+          "Value": "Fri, 22 Nov 2024 15:36:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9090,7 +9227,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1zirl4ac31"
+          "Value": "m6ph66ymul"
         },
         {
           "Name": "label",
@@ -9098,144 +9235,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bvTMpcK3s52MhST5MswS1NZ8TK2N7xt07W3LOrsyjFM="
-        }
-      ]
-    },
-    {
-      "Route": "js/MisPropiedades.js",
-      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-1zirl4ac31.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001992031873"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "501"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bvTMpcK3s52MhST5MswS1NZ8TK2N7xt07W3LOrsyjFM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 20 Nov 2024 15:24:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo="
-        }
-      ]
-    },
-    {
-      "Route": "js/MisPropiedades.js",
-      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/wwwroot/js/MisPropiedades.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1069"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 20 Nov 2024 15:24:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MwLfSw+aYFCHmrtU7k841JyBkHUlhRVvVXWdX846LEo="
-        }
-      ]
-    },
-    {
-      "Route": "js/MisPropiedades.js.gz",
-      "AssetFile": "/Users/andresjimenez/Documents/MiDepaEstudiantil/obj/Debug/net9.0/compressed/1105apseo8-1zirl4ac31.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "501"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bvTMpcK3s52MhST5MswS1NZ8TK2N7xt07W3LOrsyjFM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 20 Nov 2024 15:24:32 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bvTMpcK3s52MhST5MswS1NZ8TK2N7xt07W3LOrsyjFM="
+          "Value": "sha256-RzBsX6shl5hj1BQiKDr6dywIItSreu5y9ZZpSxnVkbM="
         }
       ]
     },

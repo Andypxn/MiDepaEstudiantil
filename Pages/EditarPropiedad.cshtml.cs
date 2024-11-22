@@ -21,18 +21,18 @@ namespace MiDepaEstudiantil.Pages
         }
 
         [BindProperty]
-    public Propiedad Propiedad { get; set; } = new Propiedad
-{
-    Titulo = string.Empty,
-    Direccion = string.Empty,
-    Alcaldia = string.Empty,
-    Tipo = string.Empty,
-    Detalles = string.Empty,
-    Precio = 0, // Valor predeterminado para un campo decimal
-    Disponible = true, // Asumir que inicialmente está disponible
-    Imagen = "images/default-property.jpg", // Ruta predeterminada de la imagen
-    UsuarioId = 0 // Establece un valor predeterminado para evitar problemas de referencia nula
-};
+        public Propiedad Propiedad { get; set; } = new Propiedad
+        {
+            Titulo = string.Empty,
+            Direccion = string.Empty,
+            Alcaldia = string.Empty,
+            Tipo = string.Empty,
+            Detalles = string.Empty,
+            Precio = 0, // Valor predeterminado para un campo decimal
+            Disponible = true, // Asumir que inicialmente está disponible
+            Imagen = "images/default-property.jpg", // Ruta predeterminada de la imagen
+            UsuarioId = 0 // Establece un valor predeterminado para evitar problemas de referencia nula
+        };
 
 
         [BindProperty]
@@ -49,7 +49,6 @@ namespace MiDepaEstudiantil.Pages
 
             return Page();
         }
-
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -58,6 +57,8 @@ namespace MiDepaEstudiantil.Pages
             }
 
             var propiedadExistente = await _context.Propiedades.FirstOrDefaultAsync(p => p.Id == Propiedad.Id);
+            Console.WriteLine(propiedadExistente);
+            Console.WriteLine("-----PROPIEDAD------");
 
             if (propiedadExistente == null)
             {
@@ -108,7 +109,7 @@ namespace MiDepaEstudiantil.Pages
 
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("/MisPropiedades");
+            return NotFound("Error");
         }
     }
 }
